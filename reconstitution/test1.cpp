@@ -3,7 +3,7 @@
 #include <string>
 
 /**
- * @brief
+ * @brief 使用双向关联
  * 1. Customer和order是一对多的关系，一个顾客可能有多个订单；
  * 2. order中可能需要保存Customer指针，比如我们需要知道当前order对应的顾客信息；
  * 3. 我们可以将控制函数放到“部件”类中，从而将所有的关联关系逻辑处理放在同一个类中；
@@ -16,7 +16,7 @@ class Order
 public:
     Order() : m_pCustomer(NULL) 
     { 
-        
+
     }
 
     ~Order()
